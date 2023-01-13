@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wizard_Form_With_Tabbing</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="datafile.js"></script>
+    <script src="myjsfile.js"></script>
+</head>
+<body>
+<div class="WizardForm">
+    <div class="container">
+        <section class="input">
+            <h1 style="text-align: center;">Wizard Form</h1>
+            <div class="inputform" style="padding-top: 20px;">
+                <form id="resetvalue">
+                    <div class="inputdetails" id="empty">
+                        <div class="step1 db section1" id="tab1C">
+                            <div class="name">
+                                <div class="first">
+                                    First Name:
+                                    <input type="text" name="field1" id="fname" placeholder="Enter First Name"style="width: 80%;margin-left: 7%;">
+                                    <p id="validfname" class="dn" style="margin-left: 20%;">Enter Your First Name</p>
+                                </div>
+                                <div class="second" style="padding-top: 20px;">
+                                    Last Name:
+                                    <input type="text" id="lname" placeholder="Enter Last Name" style="width: 80%;margin-left: 7%;">
+                                    <p id="validlname" class="dn" style="margin-left: 20%;">Enter Your Last Name</p>
+                                </div>
+                                <div class="gender" id="gender" style="padding-top: 20px;">
+                                    Gender:
+                                    <input type="radio" id="male" name="gender" value="male" style="margin-left: 64px;">
+                                    <label for="male">Male</label>
+                                    <input type="radio" id="female" name="gender" value="female">
+                                    <label for="female">Female</label><br>
+                                    <p id="validgender" class="dn" style="margin-left: 20%;">Select Your Gender</p>
+                                </div>
+                                <input type="button" id="submitbtn" value="Submit" style="margin-left:75%;cursor:pointer;">
+                                <input type="button" class="dn" id="update" value="Update"
+                                       style="margin-left:65%;cursor:pointer;">
+                                <input type="button" class="dn" id="cancel" value="Cancel" style="cursor:pointer;">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="output">
+
+            <div class="displaydata">
+                <table class="tableclass" id="tableid" style="width: 100%;">
+                    <thead>
+                    <tr>
+                        <th>SrNo</th>
+                        <th>FirstName</th>
+                        <th>LastName</th>
+                        <th>Gender</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <table id='table' class="tableclass" style="width: 100%; margin-top: 20%;">
+                    <!-- HEADING FORMATION -->
+                    <tr>
+                        <th>SrNo</th>
+                        <th>FirstName</th>
+                        <th>LastName</th>
+                        <th>Gender</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    </tr>
+                </table>
+            </div>
+
+        </section>
+        <section>
+            <input type="button" id="btnSubmit" value="Submit Data and append to table" style="margin:5% 0 0 82%;">
+        </section>
+    </div>
+</div>
+</body>
+</html>

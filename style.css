@@ -1,0 +1,18 @@
+*{box-sizing: border-box;}
+p{padding: 0;margin: 0;color: red;}
+body{padding: 0;margin: 0;font-size: 16px;line-height: 1.2;font-weight: 400;}
+h1,h3{padding: 0;margin: 0;}
+ul{margin: 0; padding: 0;}
+a{color: black;text-decoration: none;cursor: pointer;}
+.container{max-width: 1170px;padding: 0 15px;margin:0 auto;}
+.input{border: 3px solid black;padding: 30px;width: 60%;margin: 0 auto;}
+.output{padding-top: 30px;}
+.tabs ul li{display: inline-block;vertical-align: middle;width: 32.33%;text-align: center;}
+table, th, td {border: 1px solid black;border-collapse: collapse;}
+th, td {padding: 5px;text-align: left;}
+.step1,.step2,.step3{display: none;}
+.dn{display: none;}
+.db{display: block;}
+.inactive{background-color: gray;}
+
+
